@@ -20,6 +20,8 @@ void tet_warning(long t) {
 
 // Instance the clockwork with 500 ms of ALT, also setting tet_warning() as
 // warning callback
+// If you don't need the callback, just use
+// Clockwork cw(500);
 Clockwork cw(500, tet_warning);
 
 void setup() {
